@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Theme 1 */
+  --veryDarkBlueMain: hsl(222, 26%, 31%);
+  --veryDarkBlueBgc: hsl(223, 31%, 20%);
+  --veryDarkBlueScreenBgc: hsl(224, 36%, 15%);
+  --Verydarkgrayishblue: hsl(221, 14%, 31%);
+
+  --keyBgc: hsl(225, 21%, 49%);
+  --keyShadow: hsl(224, 28%, 35%);
+  --keyBgcRed: hsl(6, 63%, 50%);
+  -keyshadow: hsl(6, 70%, 34%);
+  --LightGrayisHorange: hsl(30, 25%, 89%);
+  --GrayishOrange: hsl(28, 16%, 65%);
+
+  /* Theme 2 */
+  --lightGrey: hsl(0, 0%, 90%);
+  --GrayishRed: hsl(0, 5%, 81%);
+  --Verylightgray: hsl(0, 0%, 93%);
+  --Darkmoderatecyan: hsl(185, 42%, 37%);
+  --Verydarkcyan: hsl(185, 58%, 25%);
+  --Orange: hsl(25, 98%, 40%);
+  --Lightgrayishyellow: hsl(45, 7%, 89%);
+  --Verydarkgrayishyellow: hsl(60, 10%, 19%);
+
+  /* Theme 3 */
+  --Darkviolet: hsl(281, 89%, 26%);
+  --Verydarkviolet: hsl(268, 75%, 9%);
+  --Lightyellow: hsl(52, 100%, 62%);
+  --Verydarkblue: hsl(198, 20%, 13%);
+  --Purecyan: hsl(176, 100%, 44%);
+  --Verydarkviolets: hsl(268, 47%, 21%);
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: var(--veryDarkBlueMain);
+  height: 100vh;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.calc {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 4rem auto 0;
+  height: 80vh;
+  width: 35vw;
+
+  color: var(--LightGrayisHorange);
+  transition: 0.2s;
+}
+
+.theme {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--veryDarkBlueMain);
+  height: 8%;
+  transition: 0.2s;
+}
+
+div.btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  height: 35%;
+
+  /* position: absolute; */
+  /* margin-left: 50%; */
+}
+
+.btn div.button {
+  position: absolute;
+
+  top: 40%;
+  right: 5%;
+  border-radius: 30px;
+  width: 5vw;
+  height: 2.5vh;
+  background-color: var(--veryDarkBlueScreenBgc);
+  transition: 0.2s;
+}
+
+.word {
+  font-size: 25px;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+div.circle {
+  background-color: var(--keyBgcRed);
+  width: 26%;
+  margin-top: 4%;
+  margin-left: 4%;
+  height: 75%;
+  border-radius: 100%;
+  transition: 0.2s;
+}
+
+p.mode {
+  position: absolute;
+  top: 6%;
+  right: 0%;
+  width: 18%;
+  height: 27%;
+  font-size: 14px;
+  background-color: var(--veryDarkBlueMain);
+  word-spacing: 1.2vw;
+  transition: 0.2s;
+}
+
+p.change {
+  position: absolute;
+  top: 50%;
+  right: 21%;
+}
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--veryDarkBlueScreenBgc);
+  height: 17%;
+  transition: 0.2s;
+}
+
+.numbers {
+  position: relative;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 75%;
+  border-radius: 30px;
+
+  background-color: var(--veryDarkBlueScreenBgc);
+  transition: 0.2s;
+}
+
+.wall {
+  height: 4%;
+  background-color: var(--veryDarkBlueMain);
+  transition: 0.2s;
+}
+
+.numbers div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+  width: 21%;
+  height: 12%;
+  border-radius: 20px;
+  background-color: var(--LightGrayisHorange);
+  color: black;
+  font-size: 32px;
+  transition: 0.3s;
+  color: var(--Verydarkgrayishblue);
+}
+
+div.del,
+div.reset {
+  background-color: var(--keyShadow);
+  color: white;
+  transition: 0.2s;
+}
+
+div.equal {
+  background-color: var(--keyBgcRed);
+  transition: 0.2s;
+}
+.reset,
+.equal {
+  flex-basis: 45%;
+}
+
+.calculation {
+  font-size: 3rem;
+  margin-right: 5%;
+}
+
+.clicked {
+  transform: scale(1.1);
+}
